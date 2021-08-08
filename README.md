@@ -61,4 +61,3 @@ Note: Do not enter any invalid inputs or the program will not run as expected
 
 #### References
 https://www.contrib.andrew.cmu.edu/~gc00/reviews/pokerrules
-# blackjack
