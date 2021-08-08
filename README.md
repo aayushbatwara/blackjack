@@ -5,10 +5,10 @@ The game we have created is an electronic version of blackjack. In this game, th
 
 ### Features
 
-### 3. Dynamic memory management
+### Dynamic memory management
     • Pointers and Dynamic Memory Management will be used primarily for the save load functionality.
     • A dynamic array of the player data is created that can be updated and expanded when players are added
-### 4. File input/output (e.g., for loading/saving game status)
+### File input/output (e.g., for loading/saving game status)
     • Each new user is given a random code of 6 alphabets which serves as their ‘key’.
     • The game autosaves after each round.
     • A user can play the game, then quit the game, and then load the game by relaunching the game and inputting their original ‘key’.
