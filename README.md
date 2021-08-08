@@ -1,8 +1,31 @@
-# Group 89
-## Aditya Gupta - 3035662297 & Aayush Batwara - 3035660433
+# Blackjack
+## By Aayush Batwara and Aditya Gupta
 
 The game we have created is an electronic version of blackjack. In this game, the player can play the game blackjack against the dealer, choosing their own bet amount to try and win as much money as possible against the casino.
 
+### Features
+
+### 3. Dynamic memory management
+    • Pointers and Dynamic Memory Management will be used primarily for the save load functionality.
+    • A dynamic array of the player data is created that can be updated and expanded when players are added
+### 4. File input/output (e.g., for loading/saving game status)
+    • Each new user is given a random code of 6 alphabets which serves as their ‘key’.
+    • The game autosaves after each round.
+    • A user can play the game, then quit the game, and then load the game by relaunching the game and inputting their original ‘key’.
+
+### C/C++ Libraries used
+
+#### unistd
+    • For creating time delay when dealer draws cards
+#### random
+    • Used to create random key
+#### sstream
+    • Allow input and manipulation of strings for save/load functions
+#### stdlib
+    • For random number generation
+#### ctime
+    • For random number generation
+    
 ### Game Rules
 1. In Blackjack, the player has to try to beat the dealer without going bust.
 2. Numbered cards are worth their actual value, face cards are all worth 10, and Aces are worth either 1 or 11, whichever leads to a better hand.
@@ -27,38 +50,7 @@ The game we have created is an electronic version of blackjack. In this game, th
     3. If there is a draw then no money is exchanged.
 5. The user’s chip count is updated, and if there is a sufficient balance then the new round can begin. If not, then it is game over for this user.
 
-### Features and Functions vis-a-vis given code requirements
 
-### 1. Generation of random game sets or events
-    • Each hand dealt to the user and dealer is always random, and each card is unique. Imported libraries like stdlib.h and ctime are used to randomly shuffle Deck arrays.
-### 2. Data structures for storing game status
-    • We have used a combination of pass by reference vs pass by value to alter the game status as the game progresses.
-    • There is  a centralized function which calls secondary functions to run the different parts of the game - for example, main() begins the game but printBoard() prints the cards and winner() evaluates winner.
-    • A Deck array is used, and in each round the array is re-shuffled.
-    • We have defined a class called playerData which holds the user data and appends it to a .txt file
-### 3. Dynamic memory management
-    • Pointers and Dynamic Memory Management will be used primarily for the save load functionality.
-    • A dynamic array of the player data is created that can be updated and expanded when players are added
-### 4. File input/output (e.g., for loading/saving game status)
-    • Each new user is given a random code of 6 alphabets which serves as their ‘key’.
-    • The game autosaves after each round.
-    • A user can play the game, then quit the game, and then load the game by relaunching the game and inputting their original ‘key’.
-### 5. Program codes in multiple files
-    • The program code has been separated into multiple front end and back end files of .h and .cpp. Examples include winner.h, winner.cpp, user.h, and user.cpp.
-    • We have used makefile to link the files and allow compilation of them.
-
-### C/C++ Libraries used
-
-#### unistd
-    • For creating time delay when dealer draws cards
-#### random
-    • Used to create random key
-#### sstream
-    • Allow input and manipulation of strings for save/load functions
-#### stdlib
-    • For random number generation
-#### ctime
-    • For random number generation
 
 
 ### Compilation and Execution Instructions
