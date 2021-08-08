@@ -5,10 +5,10 @@ The game we have created is an electronic version of blackjack. In this game, th
 
 ### Features
 
-### Dynamic memory management
+#### Dynamic memory management
     • Pointers and Dynamic Memory Management will be used primarily for the save load functionality.
     • A dynamic array of the player data is created that can be updated and expanded when players are added
-### File input/output (e.g., for loading/saving game status)
+#### File input/output (e.g., for loading/saving game status)
     • Each new user is given a random code of 6 alphabets which serves as their ‘key’.
     • The game autosaves after each round.
     • A user can play the game, then quit the game, and then load the game by relaunching the game and inputting their original ‘key’.
@@ -26,6 +26,15 @@ The game we have created is an electronic version of blackjack. In this game, th
 #### ctime
     • For random number generation
     
+### Compilation and Execution Instructions
+1. Download the files from the github repository
+2. Launch terminal and change the directory of the terminal to corresponding folder containing all the game files
+3. Put terminal on full screen
+4. Enter the command 'make main' followed by './main'
+5. Follow the prompts on screen to play the game.
+
+Note: Do not enter any invalid inputs or the program will not run as expected
+
 ### Game Rules
 1. In Blackjack, the player has to try to beat the dealer without going bust.
 2. Numbered cards are worth their actual value, face cards are all worth 10, and Aces are worth either 1 or 11, whichever leads to a better hand.
@@ -49,18 +58,6 @@ The game we have created is an electronic version of blackjack. In this game, th
     2. However, if the player has already gone bust then the dealer does not need to draw any more cards, even if the score is less than 17.
     3. If there is a draw then no money is exchanged.
 5. The user’s chip count is updated, and if there is a sufficient balance then the new round can begin. If not, then it is game over for this user.
-
-
-
-
-### Compilation and Execution Instructions
-1. Download the files from the github repository
-2. Launch terminal and change the directory of the terminal to corresponding folder containing all the game files
-3. Put terminal on full screen
-4. Enter the command 'make main' followed by './main'
-5. Follow the prompts on screen to play the game.
-
-Note: Do not enter any invalid inputs or the program will not run as expected
 
 #### References
 https://www.contrib.andrew.cmu.edu/~gc00/reviews/pokerrules
